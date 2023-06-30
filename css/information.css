@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(46, 46, 46, 0.872);
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 100px;
+  border-radius: 10px;
+  background: #06c6ca;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+body {
+  min-height: 100%;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 0.2px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+@media (min-width: 600px) {
+  p {
+    font-weight: 300;
+  }
+
+  .page-divide {
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+  }
+}
+
+ul {
+  font-size: 1.1em;
+  list-style: none;
+  text-align: left;
+}
+
+/* DIVIDE PAGE */
+.page-divide {
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.divide {
+  width: 5px;
+  height: 40px;
+  background: rgb(4, 82, 94);
+}
+
+.divide-line {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  border: 1px dashed rgb(3, 187, 181);
+}
+
+.divide-line.left {
+  left: 0;
+}
+
+.divide-line.right {
+  right: 0;
+}
+
+/* DIVIDE PAGE END*/
+
+.article-container {
+  margin: 50px 0;
+}
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "main-container";
+  background-image: url("../img/ilustracion-escena-dia-trabajo-dibujos-animados_52683-62609.avif");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.main-container {
+  grid-area: main-container;
+  grid-template-areas: "main-container";
+}
+
+.section-container {
+  margin: 10px;
+  padding: 30px;
+  max-width: 100%;
+  height: auto;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(3, 240, 240, 0.475);
+}
+
+@media (min-width: 700px) {
+  .section-container {
+    margin: 20px;
+    padding: 35px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+
+  .page-divide {
+    margin-bottom: 8rem;
+  }
+}
+
+.container-img {
+  max-width: 50%;
+  max-height: auto;
+  margin: auto;
+}
+
+@media (max-width: 720px) {
+  .container-img {
+    max-width: 90%;
+  }
+}
+
+.container-img img {
+  max-width: 90%;
+  max-height: 450px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .wrapper-information {
+    max-width: 100%;
+    margin-top: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .left-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .container-img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  .paragraph {
+    width: 50%;
+    text-align: center;
+    align-self: right;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+
+  ul {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .advantaje-container-inicio {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .advantaje-container-inicio :first-child {
+    max-width: 90%;
+    height: 600px;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* **************************************** ADVANTAGE CONTAINER ****************************** */
+
+.advantage-container-img img {
+  max-width: 90%;
+  height: auto;
+}
+
+ul>li {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+li img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+/* ************************************* ADVANTAGE CONTAINER END****************************** */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ************************************* TYPES WEB CONTAINER ****************************** */
+
+.types-container-img img {
+  max-width: 100%;
+  /* margin: auto; */
+}
+
+/* ************************************* TYPES WEB CONTAINER END****************************** */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONTACTO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Raleway:wght@400;700&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/spinner.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <a class="return" href="./content.html">Regresar</a>
+
+    <main class="wrapper">
+      <figure class="container-img">
+        <img src="img/contact.gif" alt="Contacto" />
+      </figure>
+
+      <div class="wrapper-contact-form">
+        <form id="formulario" class="contact-form" rel="noopener" action="https://formsubmit.co/checkovg3@outlook.com"
+          method="POST">
+          <legend>Contáctame</legend>
+          <input type="text" name="name" placeholder="Escribe tu nombre" autocomplete="off" />
+
+
+          <input id="email" type="email" name="email" placeholder="Escribe tu correo" autocomplete="off">
+
+          <input id="asunto" type="text" name="asunto" placeholder="Asunto" autocomplete="off">
+
+
+          <textarea name="mensaje" id="mensaje" placeholder="Describe lo que desees saber" cols="20"
+            rows="5"></textarea>
+          <!-- <input class="btn btn-opacity" type="submit" value="Enviar" disabled /> -->
+          <input class="btn btn-opacity" type="submit" value="Enviar" />
+
+
+          <input type="hidden" name="_next"
+            value="https://sergiovgonzalez.github.io/desarrollador-web-freelance/contact.html">
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje de un cliente!">
+
+          <div id="spinner" class="hidden-spinner show-spinner">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+
+</html>
