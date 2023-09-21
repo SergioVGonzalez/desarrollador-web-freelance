@@ -112,7 +112,7 @@ p {
   }
 
   .container-img {
-    max-width: 40%;
+    max-width: 50%;
     max-height: 400px;
     margin-left: 35px;
   }
@@ -126,13 +126,13 @@ p {
 /* //////////_____MQ_END_______/////////////// */
 
 .container-img {
-  max-width: 90%;
+  max-width: 70%;
   height: auto;
   overflow: hidden;
 }
 
 .container-img img {
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -181,11 +181,7 @@ p {
   height: 50%;
 }
 
-.container-cards:hover .card {
-  /* opacity: 1;
 
-  transform: scale(0.98); */
-}
 
 .container-cards:hover .card:hover {
   background-color: rgba(8, 90, 107, 0.384);
@@ -298,7 +294,7 @@ p {
   bottom: 50px;
   right: 40px;
   transition: all 0.3s;
-  z-index: 5;
+  z-index: 2;
 }
 
 .return:hover {
